@@ -11,7 +11,7 @@ $(document).ready(function() {
 
     // Wenn Button geklickt wird.
     $buttonGo.on("click", function() {
-        // Zeige Ergebnis der Addition
-        zeigeErgebnisAddition($inputA, $inputB);
+        // Gib Ergebnis der Addition aus
+        ausgabeAddition($inputA, $inputB);
     });
 });
