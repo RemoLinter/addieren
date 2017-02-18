@@ -7,8 +7,12 @@ $(document).ready(function() {
         // Eingabefelder in Variable stecken
         var $inputA = $('#a');
         var $inputB = $('#b');
-        
+
         // Gib Ergebnis der Addition aus
-        ausgabeAddition($inputA, $inputB);
+        var ausgabe = addiereTextfelder($inputA, $inputB);
+        ausgeben(ausgabe);
+
+        $inputA.val('');
+        $inputB.val('');
     });
 });

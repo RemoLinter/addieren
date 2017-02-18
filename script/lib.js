@@ -3,5 +3,5 @@
  */
 var addieren = function(a, b) {
     // A und B in Zahl umwandeln und zusammenzählen
-    return parseInt(a) + parseInt(b);
+    return parseFloat(a) + parseFloat(b);
 };

@@ -12,7 +12,7 @@ var ausgeben = function (wert) {
     ausgabeAlert(wert);
 };
 
-var ausgabeAddition = function ($inputA, $inputB) {
+var addiereTextfelder = function ($inputA, $inputB) {
     // Ausgabe berechnen
     var ausgabe = addieren($inputA.val(), $inputB.val());
 
@@ -22,6 +22,6 @@ var ausgabeAddition = function ($inputA, $inputB) {
         ausgabe = "fehlerhafte Eingabe";
     }
 
-    ausgeben(ausgabe);
+    return ausgabe;
 };
 
