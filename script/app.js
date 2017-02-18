@@ -1,6 +1,17 @@
 /**
  * Created by remol on 18.02.2017.
  */
+var ausgeben = function (wert) {
+    // In Konsole ausgeben
+    ausgabeLog(wert);
+
+    // Im HTML ausgeben
+    ausgabeDOM(wert);
+
+    // Als Alert ausgeben
+    ausgabeAlert(wert);
+};
+
 var ausgabeAddition = function ($inputA, $inputB) {
     // Ausgabe berechnen
     var ausgabe = addieren($inputA.val(), $inputB.val());
@@ -11,13 +22,6 @@ var ausgabeAddition = function ($inputA, $inputB) {
         ausgabe = "fehlerhafte Eingabe";
     }
 
-    // In Konsole ausgeben
-    ausgabeLog(ausgabe);
-
-    // Im HTML ausgeben
-    ausgabeDOM(ausgabe);
-
-    // Als Alert ausgeben
-    ausgabeAlert(ausgabe);
-
+    ausgeben(ausgabe);
 };
+
